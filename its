@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITS College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to ITS College</h1>
+    </header>
+
+    <div class="content">
+        <h2>Innovating the Future</h2>
+        <p>Your journey towards excellence starts here!</p>
+        <button class="button" id="showJavaMessageButton">Click me for a Java message</button>
+        <p id="javaMessage"></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 ITS College. All rights reserved.</p>
+    </div>
+
+    <script>
+        document.getElementById('showJavaMessageButton').addEventListener('click', function () {
+            // Example JavaScript interaction (can be used with backend integration)
+            document.getElementById('javaMessage').innerHTML = "JavaScript says: Java integration is possible!";
+        });
+    </script>
+
+</body>
+
+</html>
